@@ -3,13 +3,13 @@
  *========================================
  */
 
- .footer {
-  bottom: rem(64);
-  position: fixed;
-  right: rem(64);
- }
+.footer {
+  // bottom: rem(64);
+  // position: fixed;
+  // right: rem(64);
+}
 
- .ghost {
+.ghost {
   background: image-url('polygon.svg');
   background-size: cover;
   display: flex;

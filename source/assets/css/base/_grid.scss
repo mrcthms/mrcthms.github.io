@@ -3,12 +3,19 @@
  *========================================
  */
 
- .grid-wrap {
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - #{rem(128)});
+}
+
+.grid-wrap {
   align-self: center;
   margin: 0 auto;
   max-width: 1008 + 32px;
   width: 100%;
- }
+}
 
 .grid {
   padding:0 rem(16);

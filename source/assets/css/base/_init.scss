@@ -38,10 +38,9 @@ textarea {
 }
 
 body {
-  display: flex;
   font-size:1em;
   line-height:map-get($type, 'line-height');
-  padding: rem(32);
+  padding: rem(64);
 }
 
 hr {
