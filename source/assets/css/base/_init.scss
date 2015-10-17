@@ -1,0 +1,51 @@
+/**
+ * Base SCSS File
+ *
+ * @requires _type.scss, _color.scss
+ */
+
+* {
+  box-sizing:border-box;
+}
+
+html,body {
+  min-height:100vh;
+}
+
+html {
+  background: image-url('fleck-white.png'),
+              image-url('bg.svg'),
+              map-get($palette, 'green');
+  background-size:  auto,
+                    100% 100%, 
+                    auto;
+  background-repeat: repeat, no-repeat, repeat;
+  font-size:percentage(map-get($type, base) / 16);
+  overflow-y: scroll;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color:map-get($palette, 'purple');
+  font-family:map-get($type, 'font');
+  font-weight: 300;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-smoothing:antialiased;
+}
+
+body {
+  display: flex;
+  font-size:1em;
+  line-height:map-get($type, 'line-height');
+  padding: rem(32);
+}
+
+hr {
+  margin:rem(50) auto;
+  max-width:rem(600);
+  width:100%;
+}

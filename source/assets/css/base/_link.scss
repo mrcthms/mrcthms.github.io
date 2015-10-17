@@ -1,0 +1,21 @@
+/*
+ * Links
+ *========================================
+ */
+
+a {
+  color: map-get($palette, 'white');
+  text-decoration: none;
+  transition: .3s;
+
+  &:hover,
+  &:focus {
+    color: map-get($palette, 'white');
+    outline: none;
+  }
+
+  &:active {
+    color:map-get($palette, 'white');
+    outline: none;
+  }
+}

@@ -1,0 +1,11 @@
+/*
+ * Typography
+ *========================================
+ */
+
+h1 {
+  font-family: map-get($type, 'header');
+  font-size: rem(96);
+  line-height: 1;
+  margin: 0 0 rem(16);
+}

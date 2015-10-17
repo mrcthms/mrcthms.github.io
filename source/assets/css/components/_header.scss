@@ -1,0 +1,23 @@
+/*
+ * Header
+ *========================================
+ */
+.header {
+  left: rem(64);
+  position: fixed;
+  top: rem(64);
+}
+
+.logo {
+  background: image-url('polygon.svg');
+  display: flex;
+  height: rem(160);
+  justify-content: center;
+  width: rem(160);
+}
+
+.logo__image {
+  align-self: center;
+  height: rem(80);
+  width: rem(80);
+}

@@ -1,0 +1,64 @@
+/*
+ * Button
+ *========================================
+ */
+
+ .button-wrap {
+  display: inline-block;
+  position: relative;
+ }
+
+.button {
+  background: linear-gradient(135deg, map-get($palette, 'purple') 0%, map-get($palette, 'pink') 100%);
+  clip-path: polygon(
+    8px 0%, 
+    calc(100% - 8px) 0%, 
+    100% 8px, 
+    100% calc(100% - 8px), 
+    calc(100% - 8px) 100%, 
+    8px 100%, 
+    0% calc(100% - 8px), 
+    0% 8px 
+  );
+  display: inline-block;
+  font-size: rem(20);
+  padding: rem(4);
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+
+  span {
+    background: linear-gradient(135deg, map-get($palette, 'pink') 0%, map-get($palette, 'yellow') 100%);
+    clip-path: polygon(
+      6px 0%, 
+      calc(100% - 6px) 0%, 
+      100% 6px, 
+      100% calc(100% - 6px), 
+      calc(100% - 6px) 100%, 
+      6px 100%, 
+      0% calc(100% - 6px), 
+      0% 6px 
+    );
+    display: block;
+    padding:rem(29) rem(48);
+  }
+}
+
+.button-shadow {
+  background: rgba(map-get($palette, 'purple'), 0.15);
+  clip-path: polygon(
+    8px 0%, 
+    calc(100% - 8px) 0%, 
+    100% 8px, 
+    100% calc(100% - 8px), 
+    calc(100% - 8px) 100%, 
+    8px 100%, 
+    0% calc(100% - 8px), 
+    0% 8px 
+  );
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 100%;
+}

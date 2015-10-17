@@ -1,0 +1,93 @@
+.mask {
+  &:before,
+  &:after {
+    bottom: rem(40);
+    content: '';
+    position: fixed;
+    top: rem(40);
+    width: rem(32);
+  }
+
+  &:before {
+    background: linear-gradient(
+      90deg, 
+      map-get($palette, 'white') 0%, 
+      map-get($palette, 'white') 50%, 
+      map-get($palette, 'grey') 50%, 
+      map-get($palette, 'grey') 100%
+    );
+    left: 0;
+  }
+  &:after {
+    background: linear-gradient(
+      270deg, 
+      map-get($palette, 'white') 0%, 
+      map-get($palette, 'white') 50%, 
+      map-get($palette, 'grey') 50%, 
+      map-get($palette, 'grey') 100%
+    );
+    right: 0;
+  }
+}
+
+.mask__upper,
+.mask__lower {
+  height: rem(32);
+  left: rem(40);
+  position: fixed;
+  right: rem(40);
+
+  &:before,
+  &:after {
+    background-size: cover;
+    content: '';
+    height: rem(40);
+    position: absolute;
+    top: 0;
+    width: rem(40);
+  }
+}
+
+.mask__upper {
+  background: linear-gradient(
+    180deg, 
+    map-get($palette, 'white') 0%, 
+    map-get($palette, 'white') 50%, 
+    map-get($palette, 'dark-grey') 50%, 
+    map-get($palette, 'dark-grey') 100%
+  );
+  top: 0;
+  &:before {
+    background-image: image-url('mask-tl.svg');
+    left: rem(-40);
+  }
+
+  &:after {
+    background-image: image-url('mask-tr.svg');
+    right: rem(-40);
+  }
+}
+
+.mask__lower {
+  background: linear-gradient(
+    0deg, 
+    map-get($palette, 'white') 0%, 
+    map-get($palette, 'white') 50%, 
+    map-get($palette, 'dark-grey') 50%, 
+    map-get($palette, 'dark-grey') 100%
+  );
+  bottom: 0;
+  &:before {
+    background-image: image-url('mask-bl.svg');
+    bottom: 0;
+    left: rem(-40);
+    top: auto;
+  }
+
+  &:after {
+    background-image: image-url('mask-br.svg');
+    bottom: 0;
+    right: rem(-40);
+    top: auto;
+  }
+}

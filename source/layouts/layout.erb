@@ -8,12 +8,43 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
+    <script type="text/javascript">
+    WebFontConfig = { fontdeck: { id: '60754' } };
 
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+    </script>
+    <%= stylesheet_link_tag "styles" %>
+    <%= javascript_include_tag  "bundle" %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo">
+          <%= image_tag "logo.svg", class: "logo__image", alt: "The logo of Marc Thomas, front-end developer and digital designer" %>
+        </div>
+      </header>
+      <%= yield %>
+      <footer class="footer">
+        <div class="ghost">
+          <%= image_tag "jacques.svg", class: "ghost__jacques", alt: "Boo! Scary, huh?" %>
+        </div>
+        <div class="colophon">
+          <a href="//twitter.com/mrcthms">Twitter</a> | <a href="//instagram.com/mrcthms">Instagram</a> | <a href="//github.com/mrcthms">Github</a> 
+        </div>
+      </footer>
+    </div>    
+    <div class="mask" aria-hidden="true">
+      <div class="mask__upper"></div>
+      <div class="mask__lower"></div>
+    </div>
   </body>
 </html>

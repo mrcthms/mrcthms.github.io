@@ -1,0 +1,25 @@
+/*
+ * Footer
+ *========================================
+ */
+
+ .footer {
+  bottom: rem(64);
+  position: fixed;
+  right: rem(64);
+ }
+
+ .ghost {
+  background: image-url('polygon.svg');
+  background-size: cover;
+  display: flex;
+  height: rem(176);
+  justify-content: center;
+  width: rem(176);
+}
+
+.ghost__jacques {
+  align-self: center;
+  height: rem(128);
+  width: rem(128);
+}
