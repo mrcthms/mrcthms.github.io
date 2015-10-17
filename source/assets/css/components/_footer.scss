@@ -4,9 +4,8 @@
  */
 
 .footer {
-  // bottom: rem(64);
-  // position: fixed;
-  // right: rem(64);
+  display: flex;
+  width: 100%;
 }
 
 .ghost {
@@ -15,6 +14,7 @@
   display: flex;
   height: rem(176);
   justify-content: center;
+  margin-left: auto;
   width: rem(176);
 }
 
@@ -22,4 +22,11 @@
   align-self: center;
   height: rem(128);
   width: rem(128);
+}
+
+.colophon {
+  align-self: center;
+  flex: 1;
+  margin-left: rem(176);
+  text-align: center;
 }

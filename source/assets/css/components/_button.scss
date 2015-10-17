@@ -28,7 +28,8 @@
   z-index: 1;
 
   span {
-    background: linear-gradient(135deg, map-get($palette, 'pink') 0%, map-get($palette, 'yellow') 100%);
+    background: linear-gradient(135deg, map-get($palette, 'pink') 0%, map-get($palette, 'pink') 15%, map-get($palette, 'yellow') 100%);
+    background-repeat: repeat;
     clip-path: polygon(
       6px 0%, 
       calc(100% - 6px) 0%, 
@@ -40,7 +41,15 @@
       0% 6px 
     );
     display: block;
-    padding:rem(29) rem(48);
+    padding:rem(29) rem(72);
+    transition: .3s;
+  }
+
+  &:hover,
+  &:focus {
+    span {
+      background-position: -100% 0;
+    }
   }
 }
 
