@@ -44,11 +44,27 @@ end
 activate :autoprefixer, browsers: ['last 2 versions']
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def social_links
+    [
+      {
+        name: "Twitter",
+        width: 64,
+        url: "//twitter.com/@mrcthms"
+      },
+      {
+        name: "Instagram",
+        width: 64,
+        url: "//instagram.com/mrcthms"
+      },
+      {
+        name: "Github",
+        width: 64,
+        url: "//github.com/mrcthms"
+      }
+    ]
+  end
+end
 
 activate :directory_indexes
 

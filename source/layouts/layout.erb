@@ -35,7 +35,12 @@
       <%= yield %>
       <footer class="footer [ align-right ]">
         <div class="colophon">
-          <a href="//twitter.com/mrcthms">Twitter</a> | <a href="//instagram.com/mrcthms">Instagram</a> | <a href="//github.com/mrcthms">Github</a> 
+          <% social_links.each do |link| %>
+            <a href="<%= link[:url] %>" class="colophon__link">
+              <%= image_tag "#{link[:name].downcase}.svg", width: link[:width], alt: "An icon for #{link[:name]}", class: "colophon__image" %>
+              <span class="colophon__text"><%= link[:name] %></span>
+            </a>
+          <% end %>
         </div>
         <div class="ghost">
           <%= image_tag "jacques.svg", class: "ghost__jacques", alt: "Boo! Scary, huh?" %>
