@@ -4,7 +4,7 @@
 	 viewBox="0 0 160 160" style="enable-background:new 0 0 160 160;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{opacity:5.000000e-02;fill:#4C3D6D;}
+	.st1{opacity:0.05;fill:#4C3D6D;}
 </style>
 <path class="st0" d="M136.6,23.4L160,80l-23.4,56.6L80,160l-56.6-23.4L0,80l23.4-56.6L80,0L136.6,23.4z"/>
 <polygon class="st1" points="136.6,23.4 80,0 80,0 80,160 80,160 136.6,136.6 160,80 "/>
