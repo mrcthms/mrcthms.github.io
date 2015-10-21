@@ -3,19 +3,77 @@
  *========================================
  */
 
-a {
+ a {
   color: map-get($palette, 'white');
   text-decoration: none;
   transition: .3s;
 
   &:hover,
+  &:focus,
+  &:active {
+    color: map-get($palette, 'white');
+    outline: none;
+  }
+ }
+
+.text-link {
+  color: map-get($palette, 'purple');
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  transition: .3s;
+
+  &:before,
+  &:after {
+    bottom: 5%;
+    content: '';
+    position: absolute;
+    top: 5%;
+    transition: .3s;
+    width: 45%;
+    z-index: -1;
+  }
+
+  &:before {
+    background: map-get($palette, 'green');
+    left: 5%;
+    transform: translateY(4px);
+  }
+  &:after {
+    background: map-get($palette, 'yellow');
+    left: 50%;
+    transform: translateY(-4px);
+  }
+
+  &:hover,
   &:focus {
     color: map-get($palette, 'white');
     outline: none;
+
+    &:before {
+      background: map-get($palette, 'purple');
+      transform: translateY(0);
+    }
+    &:after {
+      background: map-get($palette, 'purple');
+      transform: translateY(0);
+    }
   }
 
   &:active {
     color:map-get($palette, 'white');
     outline: none;
+    transition-duration: 0.1s;
+
+    &:before,
+    &:after {
+      width: 35%;
+    }
+    &:before {
+      left: 15%;
+    }
+    &:after {
+
+    }
   }
 }

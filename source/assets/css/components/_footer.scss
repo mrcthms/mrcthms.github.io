@@ -32,6 +32,90 @@
 }
 
 .colophon__link {
+  color: map-get($palette, 'purple');
   display: inline-block;
-  min-width: 10%;
+  min-width: 15%;
+  padding: 0 rem(16);
+}
+
+.colophon__text {
+  display: block;
+  position: relative;
+  text-decoration: none;
+
+  &:before,
+  &:after {
+    bottom: 5%;
+    content: '';
+    position: absolute;
+    top: 5%;
+    transition: .3s;
+    width: 45%;
+    z-index: -1;
+  }
+
+  &:before {
+    background: map-get($palette, 'green');
+    left: 5%;
+    transform: translateY(4px);
+  }
+  &:after {
+    background: map-get($palette, 'yellow');
+    left: 50%;
+    transform: translateY(-4px);
+  }
+}
+
+.colophon__link {
+  &:hover,
+  &:focus {
+    color: map-get($palette, 'white');
+    outline: none;
+
+    .colophon__text {
+      &:before {
+        background: map-get($palette, 'purple');
+        transform: translateY(0);
+      }
+      &:after {
+        background: map-get($palette, 'purple');
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &:active {
+    color:map-get($palette, 'white');
+    outline: none;
+    transition-duration: 0.1s;
+
+    .colophon__text {
+      &:before,
+      &:after {
+        width: 35%;
+      }
+      &:before {
+        left: 15%;
+      }
+      &:after {
+
+      }
+    }
+  }
+}
+
+.colophon__image {
+  animation: bob 1s infinite ease;
+  display: block;
+  margin: 0 auto rem(16);
+  transition: .3s;
+}
+
+.colophon__link {
+  &:hover,
+  &:focus {
+    .colophon__image {
+      transform: translateY(-25%);
+    }
+  }
 }

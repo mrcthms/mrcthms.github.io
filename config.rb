@@ -40,6 +40,8 @@ configure :development do
   activate :livereload
 end
 
+activate :es6
+
 # Activate autoprefixer
 activate :autoprefixer, browsers: ['last 2 versions']
 

@@ -8,6 +8,48 @@
   position: relative;
  }
 
+ .button-sheen {
+  overflow: hidden;
+  position: relative;
+  transition: .3s;
+  z-index: 1;
+
+  &:before,
+  &:after {
+    background: map-get($palette, 'white');
+    content: '';
+    height: 60%;
+    left: 45%;
+    opacity: 0.4;
+    position: absolute;
+    top: -60%;
+    transform: rotate(45deg);
+    width: rem(4);
+    z-index: 2;
+  }
+  &:after {
+    left: 50%;
+  }
+
+  &:hover,
+  &:focus {
+    &:before,
+    &:after {
+      // top: 100%;
+      transition: all .5s;
+      transform: rotate(45deg) translateY(400%);
+    }
+    &:after {
+      transition-delay: 0.1s;
+    }
+  }
+
+  &:active {
+    transform: translateY(4px);
+    transition-duration: 0.1s;
+  }
+ }
+
 .button {
   background: linear-gradient(135deg, map-get($palette, 'purple') 0%, map-get($palette, 'pink') 50%, map-get($palette, 'purple') 100%);
   background-size: 200% 100%;
@@ -33,11 +75,6 @@
   &:focus {
     background-position: 100%;
   }
-
-  &:active {
-    transform: translateY(4px);
-    transition-duration: 0.1s;
-  }
 }
 
 .button__inner {
@@ -59,7 +96,8 @@
   transition: .3s;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   .button__inner {
     background-position: 100% 0;
   }
