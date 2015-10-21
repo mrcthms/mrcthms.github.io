@@ -9,7 +9,8 @@
  }
 
 .button {
-  background: linear-gradient(135deg, map-get($palette, 'purple') 0%, map-get($palette, 'pink') 100%);
+  background: linear-gradient(135deg, map-get($palette, 'purple') 0%, map-get($palette, 'pink') 50%, map-get($palette, 'purple') 100%);
+  background-size: 200% 100%;
   clip-path: polygon(
     8px 0%, 
     calc(100% - 8px) 0%, 
@@ -25,32 +26,53 @@
   padding: rem(4);
   position: relative;
   text-transform: uppercase;
+  transition: .3s;
   z-index: 1;
-
-  span {
-    background: linear-gradient(135deg, map-get($palette, 'pink') 0%, map-get($palette, 'pink') 15%, map-get($palette, 'yellow') 100%);
-    background-repeat: repeat;
-    clip-path: polygon(
-      6px 0%, 
-      calc(100% - 6px) 0%, 
-      100% 6px, 
-      100% calc(100% - 6px), 
-      calc(100% - 6px) 100%, 
-      6px 100%, 
-      0% calc(100% - 6px), 
-      0% 6px 
-    );
-    display: block;
-    padding:rem(29) rem(72);
-    transition: .3s;
-  }
-
+  
   &:hover,
   &:focus {
-    span {
-      background-position: -100% 0;
-    }
+    background-position: 100%;
   }
+
+  &:active {
+    transform: translateY(4px);
+    transition-duration: 0.1s;
+  }
+}
+
+.button__inner {
+  background: linear-gradient(135deg, map-get($palette, 'pink') 0%, map-get($palette, 'pink') 8%, map-get($palette, 'yellow') 50%, map-get($palette, 'pink') 100%);
+  background-repeat: repeat;
+  background-size: 200% 100%;
+  clip-path: polygon(
+    6px 0%, 
+    calc(100% - 6px) 0%, 
+    100% 6px, 
+    100% calc(100% - 6px), 
+    calc(100% - 6px) 100%, 
+    6px 100%, 
+    0% calc(100% - 6px), 
+    0% 6px 
+  );
+  display: block;
+  padding:rem(13) rem(32) rem(13) rem(20);
+  transition: .3s;
+}
+
+.button:hover {
+  .button__inner {
+    background-position: 100% 0;
+  }
+}
+
+.button__image {
+  display: inline-block;
+  vertical-align: middle;
+}
+.button__text {
+  display: inline-block;
+  padding-left: rem(16);
+  vertical-align: middle;
 }
 
 .button-shadow {

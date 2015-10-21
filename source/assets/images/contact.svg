@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<line fill="none" stroke="#E9B921" stroke-width="2" stroke-miterlimit="10" x1="3" y1="57" x2="14.5" y2="45.5"/>
+<line fill="none" stroke="#E9B921" stroke-width="2" stroke-miterlimit="10" x1="61" y1="57" x2="50" y2="46"/>
+<polygon fill="none" stroke="#4C3D6D" stroke-width="2" stroke-miterlimit="10" points="1,24 20,5 32,5 44,5 63,24 63,55 59,59 
+	5,59 1,55 "/>
+<polygon fill="#FFFFFF" points="32,50 19,50 7,38 7,11 57,11 57,38 45,50 "/>
+<polygon fill="#E2718D" stroke="#E2718D" stroke-width="2" stroke-miterlimit="10" points="51,11 51,27 47,23 43,27 43,11 "/>
+<polyline fill="none" stroke="#4C3D6D" stroke-width="2" stroke-miterlimit="10" points="7,38 7,11 57,11 57,38 "/>
+<polyline fill="none" stroke="#4C3D6D" stroke-width="2" stroke-miterlimit="10" points="1,32 19,50 45,50 63,32 "/>
+<polygon fill="#71E2A6" stroke="#4C3D6D" stroke-width="2" stroke-miterlimit="10" points="15,17 13,19 13,23 15,25 19,25 21,23 
+	21,19 19,17 "/>
+<line fill="none" stroke="#4C3D6D" stroke-width="2" stroke-miterlimit="10" x1="26" y1="19" x2="38" y2="19"/>
+<line fill="none" stroke="#4C3D6D" stroke-width="2" stroke-miterlimit="10" x1="26" y1="23" x2="38" y2="23"/>
+<line fill="none" stroke="#4C3D6D" stroke-width="2" stroke-miterlimit="10" x1="16" y1="32" x2="48" y2="32"/>
+<line fill="none" stroke="#4C3D6D" stroke-width="2" stroke-miterlimit="10" x1="18" y1="36" x2="46" y2="36"/>
+<line fill="none" stroke="#4C3D6D" stroke-width="2" stroke-miterlimit="10" x1="22" y1="40" x2="42" y2="40"/>
+<line fill="none" stroke="#4C3D6D" stroke-width="2" stroke-miterlimit="10" x1="26" y1="44" x2="38" y2="44"/>
+<rect x="16" y="8" opacity="0.15" fill="#4C3D6D" width="32" height="2"/>
+<rect x="18" y="47" opacity="0.15" fill="#4C3D6D" width="28" height="2"/>
+<rect x="4" y="21" opacity="0.15" fill="#4C3D6D" width="2" height="14"/>
+<rect x="58" y="21" opacity="0.15" fill="#4C3D6D" width="2" height="14"/>
+<polygon opacity="0.1" fill="#4C3D6D" points="32,4 32,60 59,60 64,55 64,24 58,18 58,10 50,10 44,4 "/>
+</svg>
