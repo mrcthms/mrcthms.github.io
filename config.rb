@@ -74,17 +74,15 @@ set :js_dir, 'assets/js'
 
 set :images_dir, 'assets/images'
 
-activate :minify_html
+activate :minify_html do |html|
+  html.remove_intertag_spaces = true
+end
 
-# activate :deploy do |deploy|
-#   deploy.deploy_method = :git
-#   # Optional Settings
-#   # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
-#   deploy.branch   = 'master' # default: gh-pages
-#   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
-#   # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
-# end
-
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.method = :git
+  deploy.branch = "master"
+end
 
 # Build-specific configuration
 configure :build do
