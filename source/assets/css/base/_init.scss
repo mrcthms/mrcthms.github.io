@@ -15,12 +15,6 @@ html,body {
 html {
   font-size:percentage(map-get($type, base) / 16);
   overflow-y: scroll;
-
-  @include on(720) {
-    background: map-get($palette, 'pink');
-    box-shadow: none;
-    padding: 0;
-  }
 }
 
 html,
