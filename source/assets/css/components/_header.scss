@@ -10,14 +10,27 @@
 
 .logo {
   background: image-url('polygon.svg');
+  background-size: cover;
   display: flex;
-  height: rem(160);
+  height: rem(80);
   justify-content: center;
-  width: rem(160);
+  width: rem(80);
 }
 
 .logo__image {
   align-self: center;
-  height: rem(80);
-  width: rem(80);
+  height: rem(40);
+  width: rem(40);
+}
+
+@include on(640) {
+  .logo {
+    height: rem(160);
+    width: rem(160);
+  }
+
+  .logo__image {
+    height: rem(80);
+    width: rem(80);
+  }
 }

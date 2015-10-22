@@ -30,7 +30,7 @@
     position: absolute;
     top: 5%;
     transition: .3s;
-    width: 45%;
+    width: 47%;
     z-index: -1;
   }
 
@@ -41,7 +41,7 @@
   }
   &:after {
     background: map-get($palette, 'yellow');
-    left: 50%;
+    left: 49%;
     transform: translateY(-4px);
   }
 

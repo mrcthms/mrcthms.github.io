@@ -7,7 +7,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: calc(100vh - #{rem(128)});
+  min-height: calc(100vh - #{rem(64)});
+
+  @include on(720) {
+    min-height: calc(100vh - #{rem(128)});
+  }
 }
 
 .grid-wrap {
@@ -18,8 +22,11 @@
 }
 
 .grid {
-  padding:0 rem(16);
   width: 100%;
+
+  @include on(720) {
+    padding: 0 rem(16);
+  }
 }
 
 .grid__col {
@@ -30,8 +37,14 @@
 .grid__col--half {
   @include on(640) {
     display: inline-block;
-    vertical-align: middle;
+    padding-right: rem(8);
+    vertical-align: top;
     width: 50%;
+
+    + .grid__col--half {
+      padding-left: rem(8);
+      padding-right: 0;
+    }
   }
 }
 
@@ -45,6 +58,7 @@
 .grid__col--two-thirds {
   @include on(640) {
     display: inline-block;
+    padding-right: rem(16);
     vertical-align: middle;
     width: percentage(2/3);
   }

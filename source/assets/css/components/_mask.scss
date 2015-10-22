@@ -1,11 +1,11 @@
 .mask {
   &:before,
   &:after {
-    bottom: rem(40);
+    bottom: rem(20);
     content: '';
     position: fixed;
-    top: rem(40);
-    width: rem(32);
+    top: rem(20);
+    width: rem(16);
   }
 
   &:before {
@@ -32,19 +32,19 @@
 
 .mask__upper,
 .mask__lower {
-  height: rem(32);
-  left: rem(40);
+  height: rem(16);
+  left: rem(20);
   position: fixed;
-  right: rem(40);
+  right: rem(20);
 
   &:before,
   &:after {
     background-size: cover;
     content: '';
-    height: rem(40);
+    height: rem(20);
     position: absolute;
     top: 0;
-    width: rem(40);
+    width: rem(20);
   }
 }
 
@@ -59,12 +59,12 @@
   top: 0;
   &:before {
     background-image: image-url('mask-tl.svg');
-    left: rem(-40);
+    left: rem(-20);
   }
 
   &:after {
     background-image: image-url('mask-tr.svg');
-    right: rem(-40);
+    right: rem(-20);
   }
 }
 
@@ -80,14 +80,58 @@
   &:before {
     background-image: image-url('mask-bl.svg');
     bottom: 0;
-    left: rem(-40);
+    left: rem(-20);
     top: auto;
   }
 
   &:after {
     background-image: image-url('mask-br.svg');
     bottom: 0;
-    right: rem(-40);
+    right: rem(-20);
     top: auto;
+  }
+}
+
+@include on(720) {
+  .mask {
+    &:before,
+    &:after {
+      bottom: rem(40);
+      top: rem(40);
+      width: rem(32);
+    }
+  }
+
+  .mask__upper,
+  .mask__lower {
+    height: rem(32);
+    left: rem(40);
+    right: rem(40);
+
+    &:before,
+    &:after {
+      height: rem(40);
+      width: rem(40);
+    }
+  }
+
+  .mask__upper {
+    &:before {
+      left: rem(-40);
+    }
+
+    &:after {
+      right: rem(-40);
+    }
+  }
+
+  .mask__lower {
+    &:before {
+      left: rem(-40);
+    }
+
+    &:after {
+      right: rem(-40);
+    }
   }
 }

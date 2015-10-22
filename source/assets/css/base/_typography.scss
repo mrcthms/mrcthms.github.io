@@ -5,17 +5,51 @@
 
 h1 {
   font-family: map-get($type, 'header');
-  font-size: rem(96);
+  font-size: rem(48);
   line-height: 1;
   margin: 0 0 rem(16);
+  padding-top: rem(16);
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: rem(16);
   font-weight: normal;
   margin: rem(16) 0 rem(8);
 }
 
 p {
+  font-size: rem(16);
   margin: rem(16) 0 0;
+}
+
+@include on(720) {
+  h1 {
+    font-size: rem(72);
+  }
+  h2,
+  p {
+    font-size: rem(20);
+  }
+}
+
+@include on(960) {
+  h1 {
+    //font-size: rem(84);
+  }
+  h2,
+  p {
+    font-size: rem(24);
+  }
+}
+
+@include on(1024) {
+  h1 {
+    font-size: rem(84);
+  }
+}
+
+@include on(1180) {
+  h1 {
+    font-size: rem(96);
+  }
 }

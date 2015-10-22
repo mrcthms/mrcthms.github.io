@@ -5,43 +5,80 @@
 
 .footer {
   display: flex;
+  flex-direction: row;
+  padding-bottom: rem(64);
   width: 100%;
 }
 
 .ghost {
+  align-self: flex-end;
   background: image-url('polygon.svg');
   background-size: cover;
   display: flex;
-  height: rem(176);
+  height: rem(88);
   justify-content: center;
   margin-left: auto;
-  width: rem(176);
+  width: rem(88);
 }
 
 .ghost__jacques {
   align-self: center;
-  height: rem(128);
-  width: rem(128);
+  height: rem(64);
+  width: rem(64);
+}
+
+@include on(640) {
+  .ghost {
+    height: rem(176);
+    width: rem(176);
+  }
+  .ghost__jacques {
+    height: rem(128);
+    width: rem(128);
+  }
 }
 
 .colophon {
   align-self: center;
   flex: 1;
-  margin-left: rem(176);
-  text-align: center;
+  padding-top: rem(16);
+  text-align: left;
 }
 
 .colophon__link {
   color: map-get($palette, 'purple');
-  display: inline-block;
-  min-width: 15%;
-  padding: 0 rem(16);
+  display: block;
+  padding: 0 0 rem(16);
+  width: 100%;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  @include on(640) {
+    display: inline-block;
+    min-width: 15%;
+    padding: 0 rem(16);
+    width: auto;
+  }
 }
 
 .colophon__text {
-  display: block;
+  display: inline-block;
+  font-size: rem(16);
+  padding-left: rem(8);
   position: relative;
   text-decoration: none;
+  vertical-align: middle;
+
+  @include on(640) {
+    display: block;
+    font-size: rem(20);
+  }
+
+  @include on(960) {
+    font-size: rem(24);
+  }
 
   &:before,
   &:after {
@@ -50,7 +87,7 @@
     position: absolute;
     top: 5%;
     transition: .3s;
-    width: 45%;
+    width: 47%;
     z-index: -1;
   }
 
@@ -61,7 +98,7 @@
   }
   &:after {
     background: map-get($palette, 'yellow');
-    left: 50%;
+    left: 49%;
     transform: translateY(-4px);
   }
 }
@@ -105,10 +142,9 @@
 }
 
 .colophon__image {
-  animation: bob 1s infinite ease;
-  display: block;
-  margin: 0 auto rem(16);
+  display: inline-block;
   transition: .3s;
+  vertical-align: middle;
 }
 
 .colophon__link {
@@ -117,5 +153,25 @@
     .colophon__image {
       transform: translateY(-25%);
     }
+  }
+}
+
+@include on(640) {
+  .colophon__image {
+    display: block;
+    margin: 0 auto rem(16);
+  }
+}
+
+@include on(720) {
+  .footer {
+    padding-bottom: 0;
+  }
+}
+
+@include on(960) {
+  .colophon {
+    margin-left: rem(176);
+    text-align: center;
   }
 }

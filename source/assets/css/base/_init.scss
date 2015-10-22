@@ -13,15 +13,14 @@ html,body {
 }
 
 html {
-  background: image-url('fleck-white.png'),
-              image-url('bg.svg'),
-              map-get($palette, 'green');
-  background-size:  auto,
-                    100% 100%, 
-                    auto;
-  background-repeat: repeat, no-repeat, repeat;
   font-size:percentage(map-get($type, base) / 16);
   overflow-y: scroll;
+
+  @include on(720) {
+    background: map-get($palette, 'pink');
+    box-shadow: none;
+    padding: 0;
+  }
 }
 
 html,
@@ -38,9 +37,37 @@ textarea {
 }
 
 body {
+  background: image-url('fleck-white.png'),
+              image-url('bg.svg'),
+              map-get($palette, 'pink');
+  background-size:  auto,
+                    100vw 100vw, 
+                    auto;
+  background-repeat: repeat, no-repeat, repeat;
+  background-position: center center, top right, center;
   font-size:1em;
   line-height:map-get($type, 'line-height');
-  padding: rem(64);
+  padding: rem(32);
+
+  @include on(640) {
+    background-size: auto, 100% 100%, auto;
+  }
+
+  @include on(720) {
+    padding: rem(64);
+  }
+}
+
+.touch {
+  html {
+    background: map-get($palette, 'grey');
+    box-shadow: 8px 0 map-get($palette, 'white') inset, -8px 0 map-get($palette, 'white') inset;
+    padding: 0 16px;
+
+    @include on(720) {
+      //padding:
+    }
+  }
 }
 
 hr {
