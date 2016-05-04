@@ -9,3 +9,17 @@
     @content;
   }
 }
+
+@mixin onh($value) {
+  $em: $value / 16 + em;
+  @media all and (min-height: $em) {
+    @content;
+  }
+}
+
+@mixin onxh($value) {
+  $em: $value / 16 + em;
+  @media all and (max-height: $em) {
+    @content;
+  }
+}

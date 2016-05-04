@@ -38,6 +38,19 @@
   }
 }
 
+@include onxh(760) {
+  .ghost {
+    height: rem(88);
+    width: rem(88);
+  }
+
+  .ghost__jacques {
+    height: rem(64);
+    width: rem(64);
+  }
+}
+
+
 .colophon {
   align-self: center;
   flex: 1;

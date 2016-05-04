@@ -2,11 +2,6 @@
  * Header
  *========================================
  */
-.header {
-  // left: rem(64);
-  // //position: fixed;
-  // top: rem(64);
-}
 
 .logo {
   background: image-url('polygon.svg');
@@ -32,5 +27,17 @@
   .logo__image {
     height: rem(80);
     width: rem(80);
+  }
+}
+
+@include onxh(760) {
+  .logo {
+    height: rem(80);
+    width: rem(80);
+  }
+
+  .logo__image {
+    height: rem(40);
+    width: rem(40);
   }
 }
