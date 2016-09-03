@@ -1,15 +1,1 @@
-<svg version="1.1" id="Layer_10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#4C3D6D;}
-</style>
-<path class="st0" d="M74,42H6l-2,2v22h4v-4l2-2h22l2,2v10l-2,2h-4l-2-2v-2h-4v4l3.9,4H54l4-4v-4h-4v2l-2,2h-4l-2-2V62l2-2h22l2,2v4
-	h4V44L74,42z M9,56l-1-1v-2l1-1h28l1,1v2l-1,1H9z M42,73l-1,1h-2l-1-1V61l1-1h2l1,1V73z M72,55l-1,1H43l-1-1v-2l1-1h28l1,1V55z
-	 M72,49l-1,1H9l-1-1v-2l1-1h62l1,1V49z"/>
-<path class="st0" d="M28,6h4V2H0v4h6l2,2v24l-2,2H0v4h32v-4h-4l-2-2V8L28,6z M16,33l-1,1h-2l-1-1V7l1-1h2l1,1V33z M22,33l-1,1h-2
-	l-1-1V7l1-1h2l1,1V33z"/>
-<path class="st0" d="M52,34h-4v4h32v-4h-6l-2-2V8l2-2h6V2H48v4h4l2,2v24L52,34z M64,7l1-1h2l1,1v26l-1,1h-2l-1-1V7z M58,7l1-1h2l1,1
-	v26l-1,1h-2l-1-1V7z"/>
-<polygon class="st0" points="26,14 40,24 54,14 54,10 40,20 26,10 "/>
-<polygon class="st0" points="26,22 40,32 54,22 54,18 40,28 26,18 "/>
-</svg>
+<svg id="Layer_10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><style>.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#4c3d6d}</style><path class="st0" d="M74 42H6l-2 2v22h4v-4l2-2h22l2 2v10l-2 2h-4l-2-2v-2h-4v4l3.9 4H54l4-4v-4h-4v2l-2 2h-4l-2-2V62l2-2h22l2 2v4h4V44l-2-2zM9 56l-1-1v-2l1-1h28l1 1v2l-1 1H9zm33 17l-1 1h-2l-1-1V61l1-1h2l1 1v12zm30-18l-1 1H43l-1-1v-2l1-1h28l1 1v2zm0-6l-1 1H9l-1-1v-2l1-1h62l1 1v2zM28 6h4V2H0v4h6l2 2v24l-2 2H0v4h32v-4h-4l-2-2V8l2-2zM16 33l-1 1h-2l-1-1V7l1-1h2l1 1v26zm6 0l-1 1h-2l-1-1V7l1-1h2l1 1v26zM52 34h-4v4h32v-4h-6l-2-2V8l2-2h6V2H48v4h4l2 2v24l-2 2zM64 7l1-1h2l1 1v26l-1 1h-2l-1-1V7zm-6 0l1-1h2l1 1v26l-1 1h-2l-1-1V7z"/><path class="st0" d="M26 14l14 10 14-10v-4L40 20 26 10z"/><path class="st0" d="M26 22l14 10 14-10v-4L40 28 26 18z"/></svg>

@@ -1,0 +1,55 @@
+---
+title: MRCTHMS | Marc Thomas - Front-end developer and digital designer based in Bromley, London
+---
+
+<div class="[ grid-wrap ] hiii-nerds">
+  <div class="[ grid grid--top ]">
+    <div class="[ grid__col grid__col--one-third ]">
+      <hgroup>
+        <h3>Marc Thomas</h3>
+        <h4>Digital Designer &amp; frontend developer.</h4>
+      </hgroup>
+      <div class="button-wrap">
+        <div class="button-sheen">
+          <a href="mailto:hello@mrcthms.com?subject=MRCTHMS%20Website%20Enquiry&body=Let%27s%20talk%20about%20Marc%2C%20baby." class="button">
+            <span class="button__inner">
+              <%= image_tag "contact.svg", width: 64, class: "button__image", alt: "" %>
+              <span class="button__text">Get in touch</span>
+            </span>
+          </a>
+        </div>
+        <div class="button-shadow"></div>
+      </div>
+    </div>
+    <div class="[ grid__col grid__col--two-thirds ]">
+      <div class="image-group">
+        <%= image_tag "globe.svg", width: 64, alt: "" %>
+        <%= image_tag "pencil.svg", width: 64, alt: "" %>
+        <%= image_tag "bulb.svg", width: 64, alt: "" %>
+      </div>
+      <h1>C.V.</h1>
+      <div class="cv-contents">
+        <% data.cv.experiences.each do |cv| %>
+          <div class="cv">
+            <h3 class="cv__job"><a href="<%= cv[:link] %>" class="text-link" target="_blank" rel="nofollow"><%= cv[:job] %></a></h3>
+            <div class="cv__meta">
+              <div class="cv__timespan"><%= cv[:timespan] %></div>
+              <div class="cv__job-title"><%= cv[:title] %></div>
+            </div>
+            <div class="cv__skillset">
+              <% cv[:skillset].each do |skill| %>
+                <div class="cv__skill">
+                  <span class="cv__skill-name"><%= skill %></span>
+                  <i class="cv__skill-shadow" aria-hidden="true"></i>
+                </div>
+              <% end %>
+            </div>
+            <% cv[:description].each do |body| %>
+              <p class="cv__body"><%= body %></p>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div><!--lem .welcome -->

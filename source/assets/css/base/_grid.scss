@@ -63,3 +63,17 @@
     width: percentage(2/3);
   }
 }
+
+.grid--top {
+  .grid__col--one-third,
+  .grid__col--two-thirds {
+    @include on(640) {
+      vertical-align: top;
+    }
+  }
+
+  .grid__col--one-third + .grid__col--two-thirds {
+    padding-left: rem(16);
+    padding-right: 0;
+  }
+}
