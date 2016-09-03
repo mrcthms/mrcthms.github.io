@@ -1,0 +1,56 @@
+experiences:
+  - job: Lost My Name
+    link: https://www.lostmy.name
+    timespan: Jul '15 - Present
+    title: Frontend Engineer
+    skillset:
+      - React
+      - Redux
+      - Enzyme
+      - Mocha
+      - Node
+      - ES6
+      - Rails
+    description:
+      - At Lost My Name, I am part of a team who have rebuilt core pages of our application in an Express-powered React/Redux application. I am responsible for creating &amp; maintaining our Component architecture, integrating Redux across the application, testing using Enzyme, Mocha, &amp; Webdriver.
+      - Prior to the move to an Express application, the site was a Rails application, using Spree with a custom gulp-powered frontend. As a result of this, I have gained a working knowledge in Ruby &amp; Rails.
+
+  - job: Great Little Place
+    link: https://www.greatlittleplace.com
+    timespan: Apr '15 - Jun '15
+    title: Lead Designer
+    skillset:
+      - iOS
+      - Web
+      - Icon Design
+      - Photoshop
+    description:
+      - I worked with the team at Great Little Place, firstly to reimagine their overall design language as part of their pivot towards a mobile-first product. This involved a colour palette & typography refresh, brand guidelines & icon guidelines being created.
+      - I was also in charge of the design for their <a href="https://itunes.apple.com/gb/app/glp-great-little-place/id943861610" class="text-link" target="_blank">iOS app</a>, which, when launched was a featured App of the Week on the App Store.
+
+  - job: Fueled
+    link: http://www.fueled.com
+    timespan: Jun '12 - Jul '15
+    title: Senior Web Designer
+    skillset:
+      - Javascript Animations
+      - CSS Animations
+      - Photoshop
+      - Sketch
+      - Middleman
+    description:
+      - At Fueled, I was leading the Web Design team, which was an umbrella term for both web designers and frontend developers. I worked with companies such as <a href="http://www.vanityfair.com/style/ibdl" class="text-link" target="_blank" rel="nofollow">Vanity Fair</a> and <a href="http://www.glamour.com/beauty-diaries" class="text-link" target="_blank" rel="nofollow">Glamour</a>. As an agency, Fueled specialised in highly-engaging websites with lots of animations &amp; interactions, which is where I honed my design-led frontend style.
+      - I also led design on web projects as well, first in Photoshop and then transitioning across into Sketch, ensuring I am entirely comfortable in both.
+
+  - job: Creode
+    link: http://www.creode.co.uk
+    timespan: Nov '09 - Jun '12
+    title: Lead UI Engineer
+    skillset:
+      - SCSS
+      - CSS3
+      - jQuery
+      - Rails
+      - Magento, eurgh
+    description:
+      - Creode was my first job out of University, where I worked on a variety of different client projects, from small brochure sites to huge ecommerce sites such as <a href="https://www.my1styears.com" class="text-link" target="_blank" rel="nofollow">My 1st Years</a>. Starting at a junior level and quickly working my way up to the position of Lead UI Engineer, this is where my love of frontend development began.

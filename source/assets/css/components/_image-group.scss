@@ -1,0 +1,10 @@
+.image-group {
+  margin-bottom: rem(16);
+  * {
+    display: inline-block;
+    vertical-align: middle;
+    + * {
+      margin-left: rem(16);
+    }
+  }
+}
