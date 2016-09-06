@@ -73,7 +73,9 @@
   }
 
   .grid__col--one-third + .grid__col--two-thirds {
-    padding-left: rem(16);
-    padding-right: 0;
+    @include on(640) {
+      padding-left: rem(16);
+      padding-right: 0;
+    }
   }
 }
