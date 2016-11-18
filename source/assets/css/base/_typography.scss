@@ -6,6 +6,8 @@
 h1 {
   font-family: map-get($type, 'header');
   font-size: rem(48);
+  font-weight: 900;
+  letter-spacing: rem(-1);
   line-height: 1;
   margin: 0 0 rem(16);
   padding-top: rem(16);
@@ -25,6 +27,7 @@ p {
 @include on(720) {
   h1 {
     font-size: rem(72);
+    letter-spacing: rem(-2);
   }
   h2,
   p {
@@ -45,6 +48,7 @@ p {
 @include on(1024) {
   h1 {
     font-size: rem(84);
+    letter-spacing: rem(-3);
   }
 }
 
