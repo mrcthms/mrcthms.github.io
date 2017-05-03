@@ -14,7 +14,7 @@ experiences:
     description:
       - At Lost My Name, I am part of a team who have rebuilt core pages of our application in an Express-powered React/Redux application. I am responsible for creating &amp; maintaining our Component architecture, integrating Redux across the application, testing using Enzyme, Mocha, &amp; Webdriver.
       - Prior to the move to an Express application, the site was a Rails application, using Spree with a custom gulp-powered frontend. As a result of this, I have gained a working knowledge in Ruby &amp; Rails.
-      - I also built a self-documenting living <a href="https://design-system.lostmy.name">Design System</a> for Lost My Name, powered by a component library that is shared across our application ecosystem.
+      - I also built a self-documenting, React-powered living <a href="https://design-system.lostmy.name">Design System</a> for Lost My Name, powered by a component library that is shared across our application ecosystem.
 
   - job: Great Little Place
     link: https://www.greatlittleplace.com
