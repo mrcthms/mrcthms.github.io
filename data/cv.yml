@@ -6,15 +6,22 @@ experiences:
     skillset:
       - React
       - Redux
-      - Recompose
-      - Webpack
       - Node
-      - ES6
+      - ES6/7
       - Rails
+      - UX
+      - Performance
     description:
-      - At Lost My Name, I am part of a team who have rebuilt core pages of our application in an Express-powered React/Redux application. I am responsible for creating &amp; maintaining our Component architecture, integrating Redux across the application, testing using Enzyme, Mocha, &amp; Webdriver.
-      - Prior to the move to an Express application, the site was a Rails application, using Spree with a custom gulp-powered frontend. As a result of this, I have gained a working knowledge in Ruby &amp; Rails.
-      - I also built a self-documenting, React-powered living <a href="http://design-system.lostmy.name" class="text-link">Design System</a> for Lost My Name, powered by a component library that is shared across our application ecosystem.
+      - At Lost My Name, I have been instrumental in being part of a highly motivated team who have rebuilt our website frontend from the ground up, taking it from a Rails-powered stack, to a functional React / Redux / Express application today.
+      - I have worked on many key architectural tasks, such as migrations towards a more declaratively-declared approach to powering our components, as opposed to a page-based approach which gave us huge gains is flexibility throughout the stack.
+      - I have gained thorough knowledge of a full JavaScript stack, from settings up performant server-side code, middleware, and API management, through to performance-led frontend functional React code.
+      - As a hybrid designer/engineer, I am able to troubleshoot and solve complicated code-based problems, but also be able to effortlessly with Design teams to implement their work, and have the ability to know when
+      - I also created our <a href="http://design-system.lostmy.name" class="text-link">Design System</a>, which has been well received throughout the company, but also by engineers at Airbnb and Tumblr amongst others.
+      - What I'm most proud of is the way our Design System manages to assuage most of the main pain points of maintaining a Design System, and the innovative Component viewer that I created.
+      - As a firm believer in documentation, I wanted to make sure that our Design System was as easy to maintain as possible, and rather than having to duplicate code or perform repetative manual tasks, the Design System would do as much of the heavy lifting as possible.
+      - The only thing somebody has to manually create is the textual content that accompanies each Component. The Components themselves are a separate repository, the exact same repository that we use across our application suite, so they are automatically updated whenever a new version is published; the tabular data is powered by the PropType definitions using custom-built logic to figure out what type of prop each is; and the Component controls are entirely also powered by the PropTypes, so adding a new Component to our system is as simple as possible.
+      - By using the in-built properties of the React components, the Component viewer is fully interactive, and allows users to create any possible version of a component they desire, and then export the code necessary to produce that exact configuration in a real-world application. At the company, we have seen tremendous productivity increases as a result of this, with Digital Design and Frontend teams being able to work seamlessly together to iterate and improve the user experience of our website. I blogged about our adventure creating the system, <a href="https://medium.com/@mrcthms/lost-my-names-design-system-adventure-ddaf20f72deb" class="text-link">you can view it here</a>.
+
 
   - job: Great Little Place
     link: https://www.greatlittleplace.com
@@ -27,18 +34,19 @@ experiences:
       - Photoshop
     description:
       - I worked with the team at Great Little Place, firstly to reimagine their overall design language as part of their pivot towards a mobile-first product. This involved a colour palette & typography refresh, brand guidelines & icon guidelines being created.
-      - I was also in charge of the design for their <a href="https://itunes.apple.com/gb/app/glp-great-little-place/id943861610" class="text-link" target="_blank">iOS app</a>, which, when launched was a featured App of the Week on the App Store.
+      - I was also in charge of the design for their iOS app, which, when launched was a featured App of the Week on the App Store. Sadly, the company ceased trading towards the end of 2016, but designs of the app are available upon request.
 
   - job: Fueled
     link: http://www.fueled.com
     timespan: Jun '12 - Jul '15
     title: Senior Web Designer
     skillset:
-      - Javascript Animations
-      - CSS Animations
+      - ES6
+      - CSS3
+      - Animations
       - Photoshop
       - Sketch
-      - Middleman
+      - UX
     description:
       - At Fueled, I was leading the Web Design team, which was an umbrella term for both web designers and frontend developers. I worked with companies such as <a href="http://www.vanityfair.com/style/ibdl" class="text-link" target="_blank" rel="nofollow">Vanity Fair</a> and <a href="http://www.glamour.com/beauty-diaries" class="text-link" target="_blank" rel="nofollow">Glamour</a>. As an agency, Fueled specialised in highly-engaging websites with lots of animations &amp; interactions, which is where I honed my design-led frontend style.
       - I also led design on web projects as well, first in Photoshop and then transitioning across into Sketch, ensuring I am entirely comfortable in both.
