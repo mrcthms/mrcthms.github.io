@@ -1,4 +1,6 @@
 .mask {
+  position: relative;
+  z-index: 10;
   &:before,
   &:after {
     bottom: rem(20);
@@ -10,20 +12,20 @@
 
   &:before {
     background: linear-gradient(
-      90deg, 
-      map-get($palette, 'white') 0%, 
-      map-get($palette, 'white') 50%, 
-      map-get($palette, 'grey') 50%, 
+      90deg,
+      map-get($palette, 'white') 0%,
+      map-get($palette, 'white') 50%,
+      map-get($palette, 'grey') 50%,
       map-get($palette, 'grey') 100%
     );
     left: 0;
   }
   &:after {
     background: linear-gradient(
-      270deg, 
-      map-get($palette, 'white') 0%, 
-      map-get($palette, 'white') 50%, 
-      map-get($palette, 'grey') 50%, 
+      270deg,
+      map-get($palette, 'white') 0%,
+      map-get($palette, 'white') 50%,
+      map-get($palette, 'grey') 50%,
       map-get($palette, 'grey') 100%
     );
     right: 0;
@@ -50,10 +52,10 @@
 
 .mask__upper {
   background: linear-gradient(
-    180deg, 
-    map-get($palette, 'white') 0%, 
-    map-get($palette, 'white') 50%, 
-    map-get($palette, 'dark-grey') 50%, 
+    180deg,
+    map-get($palette, 'white') 0%,
+    map-get($palette, 'white') 50%,
+    map-get($palette, 'dark-grey') 50%,
     map-get($palette, 'dark-grey') 100%
   );
   top: 0;
@@ -70,10 +72,10 @@
 
 .mask__lower {
   background: linear-gradient(
-    0deg, 
-    map-get($palette, 'white') 0%, 
-    map-get($palette, 'white') 50%, 
-    map-get($palette, 'dark-grey') 50%, 
+    0deg,
+    map-get($palette, 'white') 0%,
+    map-get($palette, 'white') 50%,
+    map-get($palette, 'dark-grey') 50%,
     map-get($palette, 'dark-grey') 100%
   );
   bottom: 0;

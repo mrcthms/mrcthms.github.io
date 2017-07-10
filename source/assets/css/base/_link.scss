@@ -77,3 +77,32 @@
     }
   }
 }
+
+.text-link-dark {
+  color: map-get($palette, 'white');
+
+  &:before {
+    background: map-get($palette, 'purple');
+  }
+  &:after {
+    background: map-get($palette, 'pink');
+  }
+
+  &:hover,
+  &:focus {
+    color: map-get($palette, 'purple');
+
+    &:before {
+      background: map-get($palette, 'yellow');
+      transform: translateY(0);
+    }
+    &:after {
+      background: map-get($palette, 'yellow');
+      transform: translateY(0);
+    }
+  }
+
+  &:active {
+    color:map-get($palette, 'purple');
+  }
+}

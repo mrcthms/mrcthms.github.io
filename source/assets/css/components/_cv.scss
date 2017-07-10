@@ -1,34 +1,5 @@
 .cv {
   margin-bottom: rem(48);
-
-  .text-link {
-    color: map-get($palette, 'white');
-
-    &:before {
-      background: map-get($palette, 'purple');
-    }
-    &:after {
-      background: map-get($palette, 'pink');
-    }
-
-    &:hover,
-    &:focus {
-      color: map-get($palette, 'purple');
-
-      &:before {
-        background: map-get($palette, 'yellow');
-        transform: translateY(0);
-      }
-      &:after {
-        background: map-get($palette, 'yellow');
-        transform: translateY(0);
-      }
-    }
-
-    &:active {
-      color:map-get($palette, 'purple');
-    }
-  }
 }
 
 .cv__meta {
@@ -129,4 +100,10 @@
   top: rem(4);
   height: 100%;
   width: 100%;
+}
+
+.cv-sidebar {
+  li {
+    margin-bottom: rem(16);
+  }
 }

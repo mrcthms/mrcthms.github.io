@@ -19,6 +19,16 @@ h2 {
   margin: rem(16) 0 rem(8);
 }
 
+.subtitle {
+  font-family: map-get($type, 'header');
+  font-size: rem(36);
+  font-weight: 800;
+  letter-spacing: rem(-1);
+  line-height: 1;
+  margin: 0 0 rem(64);
+  padding-top: rem(48);
+}
+
 p {
   font-size: rem(16);
   margin: rem(16) 0 0;
@@ -32,6 +42,9 @@ p {
   h2,
   p {
     font-size: rem(20);
+  }
+  .subtitle {
+    font-size: rem(48);
   }
 }
 
@@ -50,10 +63,17 @@ p {
     font-size: rem(84);
     letter-spacing: rem(-3);
   }
+  .subtitle {
+    font-size: rem(60);
+    letter-spacing: rem(-2);
+  }
 }
 
 @include on(1180) {
   h1 {
     font-size: rem(96);
+  }
+  .subtitle {
+    font-size: rem(72);
   }
 }

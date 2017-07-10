@@ -1,0 +1,33 @@
+experiences:
+  - type: Bachelor of Arts in New Media
+    place: Leeds University
+    link: http://media.leeds.ac.uk/
+    timespan: 2007 - 2010
+    skillset:
+      - Digital Design
+      - Interactive Design
+      - Game Development
+      - Web Development
+    description:
+      - I graduated from a New Media course in 2010. Over the course of 3 years, we touched on a variety of subjects, including designing and developing functioning full stack web applications, creating Flash-based interactive animations and games, and designing mixed media concepts for art installations.
+skills:
+  - type: Programming
+    skillset:
+      - JavaScript
+      - HTML
+      - CSS
+      - Ruby
+      - Python
+      - PHP
+  - type: Frameworks
+    skillset:
+     - React
+     - Rails
+     - jQuery
+     - Django
+     - Backbone
+  - type: Tools
+    skillset:
+      - Sketch
+      - Photoshop
+      - Illustrator

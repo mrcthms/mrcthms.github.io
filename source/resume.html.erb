@@ -1,0 +1,104 @@
+---
+title: MRCTHMS | Marc Thomas - Front-end developer and digital designer based in Bromley, London
+---
+
+<div class="[ grid-wrap ] hiii-nerds">
+  <div class="[ grid grid--top ]">
+    <div class="cv-sidebar [ grid__col grid__col--one-third ]">
+      <hgroup>
+        <h3>Marc Thomas</h3>
+        <h4>Digital Designer &amp; frontend developer.</h4>
+      </hgroup>
+      <ul>
+        <li><a href="tel:447595957792" class="text-link text-link-dark">+44 (0) 7595957792</a></li>
+        <li><a href="mailto:hello@mrcthms.com" class="text-link text-link-dark">hello@mrcthms.com</a></li>
+      </ul>
+      <div class="button-wrap">
+        <div class="button-sheen">
+          <a href="mailto:hello@mrcthms.com?subject=MRCTHMS%20Website%20Enquiry&body=Let%27s%20talk%20about%20Marc%2C%20baby." class="button">
+            <span class="button__inner">
+              <%= image_tag "contact.svg", width: 64, class: "button__image", alt: "" %>
+              <span class="button__text">Get in touch</span>
+            </span>
+          </a>
+        </div>
+        <div class="button-shadow"></div>
+      </div>
+      <ul>
+        <li><a href="#job-experience" class="text-link text-link-dark">Job Experience</a></li>
+        <li><a href="#education" class="text-link text-link-dark">Education</a></li>
+        <li><a href="#skills" class="text-link text-link-dark">Skills</a></li>
+      </ul>
+    </div>
+    <div class="[ grid__col grid__col--two-thirds ]">
+      <div class="image-group">
+        <%= image_tag "globe.svg", width: 64, alt: "" %>
+        <%= image_tag "pencil.svg", width: 64, alt: "" %>
+        <%= image_tag "bulb.svg", width: 64, alt: "" %>
+      </div>
+      <h1>Resumé</h1>
+      <div class="cv-contents" id="job-experience">
+        <h2 class="subtitle">Job Experience</h2>
+        <% data.cv.experiences.each do |cv| %>
+          <div class="cv">
+            <h3 class="cv__job"><a href="<%= cv[:link] %>" class="text-link text-link-dark" target="_blank" rel="nofollow"><%= cv[:job] %></a></h3>
+            <div class="cv__meta">
+              <div class="cv__timespan"><%= cv[:timespan] %></div>
+              <div class="cv__job-title"><%= cv[:title] %></div>
+            </div>
+            <div class="cv__skillset">
+              <% cv[:skillset].each do |skill| %>
+                <div class="cv__skill">
+                  <span class="cv__skill-name"><%= skill %></span>
+                  <i class="cv__skill-shadow" aria-hidden="true"></i>
+                </div>
+              <% end %>
+            </div>
+            <% cv[:description].each do |body| %>
+              <p class="cv__body"><%= body %></p>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+      <div class="cv-contents" id="education">
+        <h2 class="subtitle">Education</h2>
+        <% data.education.experiences.each do |cv| %>
+          <div class="cv">
+            <h3 class="cv__job"><a href="<%= cv[:link] %>" class="text-link text-link-dark" target="_blank" rel="nofollow"><%= cv[:type] %></a></h3>
+            <div class="cv__meta">
+              <div class="cv__timespan"><%= cv[:timespan] %></div>
+              <div class="cv__job-title"><%= cv[:place] %></div>
+            </div>
+            <div class="cv__skillset">
+              <% cv[:skillset].each do |skill| %>
+                <div class="cv__skill">
+                  <span class="cv__skill-name"><%= skill %></span>
+                  <i class="cv__skill-shadow" aria-hidden="true"></i>
+                </div>
+              <% end %>
+            </div>
+            <% cv[:description].each do |body| %>
+              <p class="cv__body"><%= body %></p>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+      <div class="cv-contents" id="skills">
+        <h2 class="subtitle">Skills</h2>
+        <% data.education.skills.each do |cv| %>
+          <div class="cv">
+            <h3 class="cv__job"><%= cv[:type] %></h3>
+            <div class="cv__skillset">
+              <% cv[:skillset].each do |skill| %>
+                <div class="cv__skill">
+                  <span class="cv__skill-name"><%= skill %></span>
+                  <i class="cv__skill-shadow" aria-hidden="true"></i>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div><!--lem .welcome -->
