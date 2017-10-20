@@ -1,6 +1,6 @@
 experiences:
-  - job: Lost My Name
-    link: https://www.lostmy.name
+  - job: <span class="strike">Lost My Name</span> Wonderbly
+    link: https://www.wonderbly.com
     timespan: Jul '15 - Present
     title: Frontend Engineer
     skillset:
@@ -12,11 +12,12 @@ experiences:
       - UX
       - Performance
     description:
-      - At Lost My Name, I have been instrumental in being part of a highly motivated team who have rebuilt our website frontend from the ground up, taking it from a Rails-powered stack, to a functional React / Redux / Express application today.
+      - At Wonderbly (formerly Lost My Name), I have been instrumental in being part of a highly motivated team who have rebuilt our website from the ground up, taking it from a Rails-powered stack, to a performant React / Redux / Express application today.
       - I have worked on many key architectural tasks, such as migrations towards a more declaratively-declared approach to powering our components, as opposed to a page-based approach which gave us huge gains is flexibility throughout the stack.
       - I have gained thorough knowledge of a full JavaScript stack, from settings up performant server-side code, middleware, and API management, through to performance-led frontend functional React code.
-      - As a hybrid designer/engineer, I am able to troubleshoot and solve complicated code-based problems, but also be able to effortlessly with Design teams to implement their work, and have the ability to know when
-      - I also created our <a href="http://design-system.lostmy.name" class="text-link text-link-dark">Design System</a>, which has been well received throughout the company, but also by engineers at Airbnb and Tumblr amongst others.
+      - As a hybrid designer/engineer, I am able to troubleshoot and solve complicated code-based problems, but also be able to work effortlessly with Design teams to implement and enhance their work.
+      - I also created our <a href="http://design-system.wonderbly.com" class="text-link text-link-dark">Design System</a>, which has been well received throughout the company, but also by engineers at Airbnb and Tumblr amongst others.
+      - During April 2017, the company rebranded, and I was central in delivering the web arm of the rebrand effort. Thankfully due to the work that had gone in to creating the Design System, this task was greatly simplified, as almost everything could be created and distributed through a centralised repository to all our applications.
       - What I'm most proud of is the way our Design System manages to assuage most of the main pain points of maintaining a Design System, and the innovative Component viewer that I created.
       - As a firm believer in documentation, I wanted to make sure that our Design System was as easy to maintain as possible, and rather than having to duplicate code or perform repetative manual tasks, the Design System would do as much of the heavy lifting as possible.
       - The only thing somebody has to manually create is the textual content that accompanies each Component. The Components themselves are a separate repository, the exact same repository that we use across our application suite, so they are automatically updated whenever a new version is published; the tabular data is powered by the PropType definitions using custom-built logic to figure out what type of prop each is; and the Component controls are entirely also powered by the PropTypes, so adding a new Component to our system is as simple as possible.

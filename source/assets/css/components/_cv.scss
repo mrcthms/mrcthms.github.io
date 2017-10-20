@@ -107,3 +107,27 @@
     margin-bottom: rem(16);
   }
 }
+
+// Strikethrough
+
+.cv {
+  .strike {
+    position: relative;
+    display: inline-block;
+
+    &:after {
+      background: linear-gradient(
+        90deg,
+        map-get($palette, 'pink'),
+        map-get($palette, 'pink')
+      );
+      content: '';
+      height: rem(4);
+      position: absolute;
+      top: 50%;
+      left: rem(-4);
+      right: rem(-4);
+      transform: rotate(-2deg);
+    }
+  }
+}
