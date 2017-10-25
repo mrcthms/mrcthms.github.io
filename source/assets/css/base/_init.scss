@@ -39,7 +39,8 @@ $p: map-get($palette, 'pink');
 
 body {
   background: image-url('fleck-white.png'),
-              image-url('bg.svg'),
+              image-url('bg-vice.svg'),
+              linear-gradient(180deg, map-get($palette, 'pink') 0%, map-get($palette, 'yellow') 50%, map-get($palette, 'blue') 100%),
               map-get($palette, 'pink');
   background-size:  auto,
                     100vw 100vw,
