@@ -110,6 +110,11 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    sass (3.7.3)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sassc (2.0.0)
       ffi (~> 1.9.6)
       rake
@@ -136,6 +141,7 @@ DEPENDENCIES
   middleman-livereload (~> 3.4)
   middleman-minify-html
   middleman-sprockets (~> 4.1.1)
+  sass (~> 3.7)
   tzinfo-data
   wdm (~> 0.1.0)
 
