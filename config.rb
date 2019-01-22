@@ -32,6 +32,8 @@
 # Helpers
 ###
 
+activate :sprockets
+
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
@@ -40,11 +42,11 @@ configure :development do
   activate :livereload
 end
 
-activate :es6
 
 # Activate autoprefixer
-activate :autoprefixer, browsers: ['last 2 versions']
-
+activate :autoprefixer do |prefix|
+  prefix.browsers = "last 2 versions"
+end
 # Methods defined in the helpers block are available in templates
 helpers do
   def social_links
@@ -82,7 +84,7 @@ end
 
 activate :deploy do |deploy|
   deploy.build_before = true
-  deploy.method = :git
+  deploy.deploy_method = :git
   deploy.branch = "master"
 end
 

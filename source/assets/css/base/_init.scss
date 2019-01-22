@@ -5,15 +5,16 @@
  */
 
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
-html,body {
-  min-height:100vh;
+html,
+body {
+  min-height: 100vh;
 }
 
 html {
-  font-size:percentage(map-get($type, base) / 16);
+  font-size: percentage(map-get($type, base) / 16);
   overflow-y: scroll;
 }
 
@@ -22,32 +23,28 @@ button,
 input,
 select,
 textarea {
-  color:map-get($palette, 'purple');
-  font-family:map-get($type, 'font');
+  color: map-get($palette, "purple");
+  font-family: map-get($type, "font");
   font-weight: 300;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  font-smoothing:antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
 }
 
-$g: lighten(map-get($palette, 'pink'), 2%);
-$h: lighten(map-get($palette, 'pink'), 5%);
-$y: map-get($palette, 'green');
-$b: map-get($palette, 'purple');
-$p: map-get($palette, 'pink');
-
+$g: lighten(map-get($palette, "pink"), 2%);
+$h: lighten(map-get($palette, "pink"), 5%);
+$y: map-get($palette, "green");
+$b: map-get($palette, "purple");
+$p: map-get($palette, "pink");
 
 body {
-  background: image-url('fleck-white.png'),
-              image-url('bg.svg'),
-              map-get($palette, 'pink');
-  background-size:  auto,
-                    100vw 100vw,
-                    auto;
+  background: image-url("fleck-white.png"), image-url("bg.svg"),
+    map-get($palette, "pink");
+  background-size: auto, 100vw 100vw, auto;
   background-repeat: repeat, no-repeat, repeat;
   background-position: center center, top right, center;
-  font-size:1em;
-  line-height:map-get($type, 'line-height');
+  font-size: 1em;
+  line-height: map-get($type, "line-height");
   padding: rem(32);
 
   @include on(640) {
@@ -61,23 +58,85 @@ body {
 
 .curriculum-vitae,
 .resume {
-  background: image-url('fleck-white.png'),
-    linear-gradient(-45deg, $p 25%, transparent 25%, transparent 75%, $g 75%, $g) 0 0,
-    linear-gradient(-45deg, $g 25%, transparent 25%, transparent 75%, $p 75%, $p) 1em 1em,
-    linear-gradient(45deg, $g 17%, transparent 17%, transparent 25%, $g 25%, $g 36%, transparent 36%, transparent 64%, $g 64%, $g 75%, transparent 75%, transparent 83%, $g 83%) 1em 1em;
+  background: image-url("fleck-white.png"),
+    linear-gradient(
+        -45deg,
+        $p 25%,
+        transparent 25%,
+        transparent 75%,
+        $g 75%,
+        $g
+      )
+      0 0,
+    linear-gradient(
+        -45deg,
+        $g 25%,
+        transparent 25%,
+        transparent 75%,
+        $p 75%,
+        $p
+      )
+      1em 1em,
+    linear-gradient(
+        45deg,
+        $g 17%,
+        transparent 17%,
+        transparent 25%,
+        $g 25%,
+        $g 36%,
+        transparent 36%,
+        transparent 64%,
+        $g 64%,
+        $g 75%,
+        transparent 75%,
+        transparent 83%,
+        $g 83%
+      )
+      1em 1em;
   background-color: $p;
   background-size: auto, 2em 2em, 2em 2em, 2em 2em;
   position: relative;
 
   @include on(720) {
     &:before {
-      background: image-url('fleck-white.png'),
-        linear-gradient(-45deg, $p 25%, transparent 25%, transparent 75%, $y 75%, $y) 0 0,
-        linear-gradient(-45deg, $y 25%, transparent 25%, transparent 75%, $p 75%, $p) 1em 1em,
-        linear-gradient(45deg, $y 17%, transparent 17%, transparent 25%, $y 25%, $y 36%, transparent 36%, transparent 64%, $y 64%, $y 75%, transparent 75%, transparent 83%, $y 83%) 1em 1em;
+      background: image-url("fleck-white.png"),
+        linear-gradient(
+            -45deg,
+            $p 25%,
+            transparent 25%,
+            transparent 75%,
+            $y 75%,
+            $y
+          )
+          0 0,
+        linear-gradient(
+            -45deg,
+            $y 25%,
+            transparent 25%,
+            transparent 75%,
+            $p 75%,
+            $p
+          )
+          1em 1em,
+        linear-gradient(
+            45deg,
+            $y 17%,
+            transparent 17%,
+            transparent 25%,
+            $y 25%,
+            $y 36%,
+            transparent 36%,
+            transparent 64%,
+            $y 64%,
+            $y 75%,
+            transparent 75%,
+            transparent 83%,
+            $y 83%
+          )
+          1em 1em;
       background-color: $p;
       background-size: auto, 2em 2em, 2em 2em, 2em 2em;
-      content: '';
+      content: "";
       position: absolute;
       left: 4em;
       top: 0;
@@ -86,13 +145,44 @@ body {
     }
 
     &:after {
-      background: image-url('fleck-white.png'),
-        linear-gradient(-45deg, $p 25%, transparent 25%, transparent 75%, $b 75%, $b) 0 0,
-        linear-gradient(-45deg, $b 25%, transparent 25%, transparent 75%, $p 75%, $p) 1em 1em,
-        linear-gradient(45deg, $b 17%, transparent 17%, transparent 25%, $b 25%, $b 36%, transparent 36%, transparent 64%, $b 64%, $b 75%, transparent 75%, transparent 83%, $b 83%) 1em 1em;
+      background: image-url("fleck-white.png"),
+        linear-gradient(
+            -45deg,
+            $p 25%,
+            transparent 25%,
+            transparent 75%,
+            $b 75%,
+            $b
+          )
+          0 0,
+        linear-gradient(
+            -45deg,
+            $b 25%,
+            transparent 25%,
+            transparent 75%,
+            $p 75%,
+            $p
+          )
+          1em 1em,
+        linear-gradient(
+            45deg,
+            $b 17%,
+            transparent 17%,
+            transparent 25%,
+            $b 25%,
+            $b 36%,
+            transparent 36%,
+            transparent 64%,
+            $b 64%,
+            $b 75%,
+            transparent 75%,
+            transparent 83%,
+            $b 83%
+          )
+          1em 1em;
       background-color: $p;
       background-size: auto, 2em 2em, 2em 2em, 2em 2em;
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 4em;
@@ -108,7 +198,8 @@ body {
 }
 
 .touch {
-  background: map-get($palette, 'grey');
-  box-shadow: 8px 0 map-get($palette, 'white') inset, -8px 0 map-get($palette, 'white') inset;
+  background: map-get($palette, "grey");
+  box-shadow: 8px 0 map-get($palette, "white") inset,
+    -8px 0 map-get($palette, "white") inset;
   padding: 0 16px;
 }

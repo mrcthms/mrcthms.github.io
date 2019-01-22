@@ -2,14 +2,14 @@
 # the following line to use "http://" instead
 source 'https://rubygems.org'
 
-gem "middleman", "~>3.4.0"
+gem "middleman", "~>4.2"
 
 # Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
+gem "middleman-livereload", "~> 3.4"
 
-gem 'middleman-deploy', '~> 1.0'
+gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
-gem "middleman-es6", github: "vast/middleman-es6"
+gem 'middleman-sprockets', '~> 4.1.1' 
 
 # Autoprefixer, hollerr
 gem 'middleman-autoprefixer'
