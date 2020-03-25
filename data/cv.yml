@@ -1,7 +1,25 @@
 experiences:
+  - job: InVision
+    link: https://invisionapp.com
+    timespan: Dec ’17 – Present
+    title: <span class="strike">Design Systems Engineer</span> Senior UX Engineer
+    skillset:
+      - React
+      - Design Systems
+      - Node
+      - ESNext
+      - UX
+      - Accessibility
+    description:
+      - I started at InVision as their sole Design Systems Engineer, later being promoted to a Senior UX Engineer, in an engineering role that sat within a satelling team of the design department. It was our responsibility to create InVision's first design system. As part of a very lean team – at the time we had a designer, UX writer, and myself – I led the development of the components themselves, as well as creating an internal site to house our design, write, and build sections of the design system, and at a later date a revolutionary monitoring application which allowed us to create detailed reports about the state of our design system in use across our product suite. A lot of the features that I build into our design system's website actually made it back upstream into our customer-facing Design System Manager product.
+      - I worked very closely with engineers on all of the squads that would consume the design system to ensure that it was meeting their needs and that the process of introducing the design system to the pre-existing engineering ecosystem.
+      - After building the design system, my role shifted to that of advocacy and maintenance for the system. I was responsible for starting practices within the engineering organisation to better build a community around the design system, allowing for greater efficiency in updating and distributing the system internally.
+      - By the time I became a senior engineer, we also had another engineer join our team so it was great to be able to use my senior experience to help them to become a better engineer, as well as increase my experience of being a major stakeholder of new initiatives and projects we took on.
+      - A secondary part of my role was helping out other squads with frontend work when they required an extra pair of hands. I worked with a variety of squads at InVision, adapting to all the challenges that entailed.
+
   - job: <span class="strike">Lost My Name</span> Wonderbly
     link: https://www.wonderbly.com
-    timespan: Jul '15 - Present
+    timespan: Jul ’15 – Dec ’17
     title: Frontend Engineer
     skillset:
       - React
@@ -12,17 +30,13 @@ experiences:
       - UX
       - Performance
     description:
-      - At Wonderbly (formerly Lost My Name), I have been instrumental in being part of a highly motivated team who have rebuilt our website from the ground up, taking it from a Rails-powered stack, to a performant React / Redux / Express application today.
-      - I have worked on many key architectural tasks, such as migrations towards a more declaratively-declared approach to powering our components, as opposed to a page-based approach which gave us huge gains is flexibility throughout the stack.
+      - At Wonderbly (formerly Lost My Name), I was instrumental in being part of a highly motivated team who rebuilt their website from the ground up, taking it from a Rails-powered stack, to a performant React / Redux / Express application.
+      - I have worked on many key architectural tasks, such as migrations towards a more declaratively-declared approach to powering our components, as opposed to a page-based approach which gave us huge gains in flexibility throughout the stack.
       - I have gained thorough knowledge of a full JavaScript stack, from settings up performant server-side code, middleware, and API management, through to performance-led frontend functional React code.
       - As a hybrid designer/engineer, I am able to troubleshoot and solve complicated code-based problems, but also be able to work effortlessly with Design teams to implement and enhance their work.
-      - I also created our <a href="http://design-system.wonderbly.com" class="text-link text-link-dark">Design System</a>, which has been well received throughout the company, but also by engineers at Airbnb and Tumblr amongst others.
-      - During April 2017, the company rebranded, and I was central in delivering the web arm of the rebrand effort. Thankfully due to the work that had gone in to creating the Design System, this task was greatly simplified, as almost everything could be created and distributed through a centralised repository to all our applications.
-      - What I'm most proud of is the way our Design System manages to assuage most of the main pain points of maintaining a Design System, and the innovative Component viewer that I created.
-      - As a firm believer in documentation, I wanted to make sure that our Design System was as easy to maintain as possible, and rather than having to duplicate code or perform repetative manual tasks, the Design System would do as much of the heavy lifting as possible.
-      - The only thing somebody has to manually create is the textual content that accompanies each Component. The Components themselves are a separate repository, the exact same repository that we use across our application suite, so they are automatically updated whenever a new version is published; the tabular data is powered by the PropType definitions using custom-built logic to figure out what type of prop each is; and the Component controls are entirely also powered by the PropTypes, so adding a new Component to our system is as simple as possible.
-      - By using the in-built properties of the React components, the Component viewer is fully interactive, and allows users to create any possible version of a component they desire, and then export the code necessary to produce that exact configuration in a real-world application. At the company, we have seen tremendous productivity increases as a result of this, with Digital Design and Frontend teams being able to work seamlessly together to iterate and improve the user experience of our website. I blogged about our adventure creating the system, <a href="https://medium.com/@mrcthms/lost-my-names-design-system-adventure-ddaf20f72deb" class="text-link text-link-dark">you can view it here</a>.
-
+      - I also single-handedly created the <a href="http://design-system.wonderbly.com" class="text-link text-link-dark">Design System</a> in the summer of 2016, which was well received throughout the company, but also by engineers at Airbnb and Tumblr amongst others.
+      - The Wonderbly design system and website pre-dates the vast majority of design system frameworks that exist today, such as Storybook and Styleguidist, and pioneered the use of live, reactive, responsive components within a design system.
+      - During April 2017, the company rebranded, and I was the frontend lead for delivering the web arm of the rebrand effort. Thankfully due to the work that had gone in to creating the Design System, this task was greatly simplified, as almost everything could be created and distributed through a centralised repository to all our applications.
 
   - job: Great Little Place
     link: https://www.greatlittleplace.com
@@ -61,6 +75,6 @@ experiences:
       - CSS3
       - jQuery
       - Rails
-      - Magento, eurgh
+      - Magento
     description:
       - Creode was my first job out of University, where I worked on a variety of different client projects, from small brochure sites to huge ecommerce sites such as <a href="https://www.my1styears.com" class="text-link text-link-dark" target="_blank" rel="nofollow">My 1st Years</a>. Starting at a junior level and quickly working my way up to the position of Lead UI Engineer, this is where my love of frontend development began.
